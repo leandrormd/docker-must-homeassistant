@@ -116,9 +116,9 @@ registerSimpleTopic   "ChrError1"                                ""             
 registerSimpleTopic   "ChrWarning1"                              ""                 "alert-outline"                ""                   ""                  
 registerTopic         "BattVolGrade"                             "V"                "current-dc"                   "voltage"            "measurement"       
 registerTopic         "RatedCurrent"                             "A"                "current-dc"                   "current"            "measurement"       
-registerTopic         "AccumulatedDay"                           "day"              "calendar-day"                 ""                   ""                  
-registerTopic         "AccumulatedHour"                          "hour"             "clock-outline"                ""                   ""                  
-registerTopic         "AccumulatedMinute"                        "min"              "timer-outline"                ""                   ""                  
+registerSimpleTopic   "AccumulatedDay"                           "day"              "calendar-day"                 ""                   ""                  
+registerSimpleTopic   "AccumulatedHour"                          "hour"             "clock-outline"                ""                   ""                  
+registerSimpleTopic   "AccumulatedMinute"                        "min"              "timer-outline"                ""                   ""                  
 
 # Register composite topics manually for now
 

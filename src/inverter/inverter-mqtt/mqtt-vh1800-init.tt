@@ -74,7 +74,7 @@ registerInverterRawCMD () {
     {
         if (sensor.Value<bool>("Publish") == false) continue;
 
-        if(!string.IsNullOrEmpty(sensor.Value<string>("Uom")))
+        if(!string.IsNullOrEmpty(sensor.Value<string>("Uom")) && !string.IsNullOrEmpty(sensor.Value<string>("DeviceClass")))
         {
             WriteLine($"registerTopic         {"\"" + sensor["Name"] + "\"", -40}   {"\"" + sensor["Uom"] + "\"", -15}    {"\"" + sensor["Icon"] + "\"", -30} {"\"" + sensor["DeviceClass"] + "\"", -20} {"\"" + sensor["StateClass"] + "\"", -20}");
         }
