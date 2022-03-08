@@ -48,7 +48,7 @@ registerSimpleTopic () {
             \"name\": \""$MQTT_DEVICENAME"_$1\",
             \"unique_id\": \""$MQTT_DEVICENAME"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
-            \"icon\": \"mdi:$3\",
+            \"icon\": \"mdi:$3\"
         }"
 }
 

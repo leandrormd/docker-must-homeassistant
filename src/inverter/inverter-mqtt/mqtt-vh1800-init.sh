@@ -1,4 +1,4 @@
-#!/bin/bash
+ï»¿#!/bin/bash
 #
 # Simple script to register the MQTT topics when the container starts for the first time...
 
@@ -38,7 +38,7 @@ registerSimpleTopic () {
             \"name\": \""$MQTT_DEVICENAME"_$1\",
             \"unique_id\": \""$MQTT_DEVICENAME"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
-            \"icon\": \"mdi:$3\",
+            \"icon\": \"mdi:$3\"
         }"
 }
 
@@ -81,9 +81,9 @@ registerTopic         "GridFrequency"                            "Hz"           
 registerSimpleTopic   "InverterMaxNumber"                        ""                 "format-list-numbered"         ""                   ""                  
 registerSimpleTopic   "CombineType"                              ""                 "format-list-bulleted-type"    ""                   ""                  
 registerSimpleTopic   "InverterNumber"                           ""                 "format-list-numbered"         ""                   ""                  
-registerTopic         "AcRadiatorTemp"                           "ºC"               "thermometer"                  "temperature"        "measurement"       
-registerTopic         "TransformerTemp"                          "ºC"               "thermometer"                  "temperature"        "measurement"       
-registerTopic         "DcRadiatorTemp"                           "ºC"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "AcRadiatorTemp"                           "ÂºC"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "TransformerTemp"                          "ÂºC"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "DcRadiatorTemp"                           "ÂºC"               "thermometer"                  "temperature"        "measurement"       
 registerSimpleTopic   "InverterRelayStateNo"                     ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "GridRelayStateNo"                         ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "LoadRelayStateNo"                         ""                 "electric-switch"              ""                   ""                  
@@ -108,8 +108,8 @@ registerTopic         "PvVoltage"                                "V"            
 registerTopic         "ChrBatteryVoltage"                        "V"                "current-dc"                   "voltage"            "measurement"       
 registerTopic         "ChargerCurrent"                           "A"                "current-dc"                   "current"            "measurement"       
 registerTopic         "ChargerPower"                             "W"                "car-turbopower"               "power"              "measurement"       
-registerTopic         "RadiatorTemp"                             "ºC"               "thermometer"                  "temperature"        "measurement"       
-registerTopic         "ExternalTemp"                             "ºC"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "RadiatorTemp"                             "ÂºC"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "ExternalTemp"                             "ÂºC"               "thermometer"                  "temperature"        "measurement"       
 registerSimpleTopic   "BatteryRelayNo"                           ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "PvRelayNo"                                ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "ChrError1"                                ""                 "alert-circle-outline"         ""                   ""                  
