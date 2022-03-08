@@ -363,7 +363,9 @@
     "Uom": "V",
     "Icon": "current-ac",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "voltage",
+    "StateClass": "measurement"
   },
   {
     "Address": 25203,
@@ -374,7 +376,9 @@
     "Uom": "VA",
     "Icon": "lightbulb-outline",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "apparent_power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25205,
@@ -385,7 +389,9 @@
     "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "voltage",
+    "StateClass": "measurement"
   },
   {
     "Address": 25206,
@@ -396,7 +402,9 @@
     "Uom": "V",
     "Icon": "current-ac",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "voltage",
+    "StateClass": "measurement"
   },
   {
     "Address": 25207,
@@ -407,7 +415,9 @@
     "Uom": "V",
     "Icon": "current-ac",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "voltage",
+    "StateClass": "measurement"
   },
   {
     "Address": 25208,
@@ -418,7 +428,9 @@
     "Uom": "V",
     "Icon": "cog-transfer-outline",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "voltage",
+    "StateClass": "measurement"
   },
   {
     "Address": 25209,
@@ -429,7 +441,9 @@
     "Uom": "A",
     "Icon": "current-ac",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "current",
+    "StateClass": "measurement"
   },
   {
     "Address": 25210,
@@ -440,7 +454,9 @@
     "Uom": "A",
     "Icon": "current-ac",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "current",
+    "StateClass": "measurement"
   },
   {
     "Address": 25211,
@@ -451,7 +467,9 @@
     "Uom": "A",
     "Icon": "current-ac",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "current",
+    "StateClass": "measurement"
   },
   {
     "Address": 25212,
@@ -462,7 +480,9 @@
     "Uom": "A",
     "Icon": "current-ac",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "current",
+    "StateClass": "measurement"
   },
   {
     "Address": 25213,
@@ -473,7 +493,9 @@
     "Uom": "W",
     "Icon": "cog-transfer-outline",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25214,
@@ -484,7 +506,9 @@
     "Uom": "W",
     "Icon": "transmission-tower",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25215,
@@ -495,7 +519,9 @@
     "Uom": "W",
     "Icon": "lightbulb-on-outline",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25216,
@@ -506,7 +532,9 @@
     "Uom": "%",
     "Icon": "progress-download",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "power_factor",
+    "StateClass": "measurement"
   },
   {
     "Address": 25217,
@@ -517,7 +545,9 @@
     "Uom": "VA",
     "Icon": "cog-transfer-outline",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "apparent_power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25218,
@@ -528,7 +558,9 @@
     "Uom": "VA",
     "Icon": "transmission-tower",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "apparent_power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25219,
@@ -539,7 +571,9 @@
     "Uom": "VA",
     "Icon": "lightbulb-on-outline",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "apparent_power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25221,
@@ -550,7 +584,9 @@
     "Uom": "VA",
     "Icon": "cog-transfer-outline",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "apparent_power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25222,
@@ -561,7 +597,9 @@
     "Uom": "VA",
     "Icon": "transmission-tower",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "apparent_power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25223,
@@ -572,7 +610,9 @@
     "Uom": "VA",
     "Icon": "lightbulb-on-outline",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "apparent_power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25225,
@@ -583,7 +623,9 @@
     "Uom": "Hz",
     "Icon": "sine-wave",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "frequency",
+    "StateClass": "measurement"
   },
   {
     "Address": 25226,
@@ -594,7 +636,9 @@
     "Uom": "Hz",
     "Icon": "sine-wave",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "frequency",
+    "StateClass": "measurement"
   },
   {
     "Address": 25229,
@@ -635,7 +679,9 @@
     "Uom": "ºC",
     "Icon": "thermometer",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "temperature",
+    "StateClass": "measurement"
   },
   {
     "Address": 25234,
@@ -646,7 +692,9 @@
     "Uom": "ºC",
     "Icon": "thermometer",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "temperature",
+    "StateClass": "measurement"
   },
   {
     "Address": 25235,
@@ -657,7 +705,9 @@
     "Uom": "ºC",
     "Icon": "thermometer",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "temperature",
+    "StateClass": "measurement"
   },
   {
     "Address": 25237,
@@ -1005,7 +1055,9 @@
     "Uom": "W",
     "Icon": "car-battery",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25274,
@@ -1016,7 +1068,9 @@
     "Uom": "A",
     "Icon": "current-dc",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "current",
+    "StateClass": "measurement"
   },
   {
     "Address": 25275,
@@ -1027,7 +1081,9 @@
     "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "voltage",
+    "StateClass": "measurement"
   },
   {
     "Address": 25277,
@@ -1038,7 +1094,9 @@
     "Uom": "W",
     "Icon": "certificate",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "power",
+    "StateClass": "measurement"
   },
   {
     "Address": 25278,
@@ -1249,7 +1307,9 @@
     "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "voltage",
+    "StateClass": "measurement"
   },
   {
     "Address": 15206,
@@ -1260,7 +1320,9 @@
     "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "voltage",
+    "StateClass": "measurement"
   },
   {
     "Address": 15207,
@@ -1271,7 +1333,9 @@
     "Uom": "A",
     "Icon": "current-dc",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "current",
+    "StateClass": "measurement"
   },
   {
     "Address": 15208,
@@ -1282,7 +1346,9 @@
     "Uom": "W",
     "Icon": "car-turbopower",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "power",
+    "StateClass": "measurement"
   },
   {
     "Address": 15209,
@@ -1293,7 +1359,9 @@
     "Uom": "ºC",
     "Icon": "thermometer",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "temperature",
+    "StateClass": "measurement"
   },
   {
     "Address": 15210,
@@ -1304,7 +1372,9 @@
     "Uom": "ºC",
     "Icon": "thermometer",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "temperature",
+    "StateClass": "measurement"
   },
   {
     "Address": 15211,
@@ -1389,7 +1459,9 @@
     "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "voltage",
+    "StateClass": "measurement"
   },
   {
     "Address": 15216,
@@ -1400,7 +1472,9 @@
     "Uom": "A",
     "Icon": "current-dc",
     "Lookup": [],
-    "Publish": true
+    "Publish": true,
+    "DeviceClass": "current",
+    "StateClass": "measurement"
   },
   {
     "Address": 15217,
