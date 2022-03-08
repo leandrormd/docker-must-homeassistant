@@ -48,6 +48,7 @@ registerSimpleTopic () {
             \"name\": \""$MQTT_DEVICENAME"_$1\",
             \"unique_id\": \""$MQTT_DEVICENAME"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
+            \"unit_of_measurement\": \"$2\",
             \"icon\": \"mdi:$3\"
         }"
 }
@@ -74,7 +75,7 @@ registerInverterRawCMD () {
     {
         if (sensor.Value<bool>("Publish") == false) continue;
 
-        if(!string.IsNullOrEmpty(sensor.Value<string>("Uom")) && !string.IsNullOrEmpty(sensor.Value<string>("DeviceClass")))
+        if(!string.IsNullOrEmpty(sensor.Value<string>("DeviceClass")))
         {
             WriteLine($"registerTopic         {"\"" + sensor["Name"] + "\"", -40}   {"\"" + sensor["Uom"] + "\"", -15}    {"\"" + sensor["Icon"] + "\"", -30} {"\"" + sensor["DeviceClass"] + "\"", -20} {"\"" + sensor["StateClass"] + "\"", -20}");
         }
@@ -87,17 +88,17 @@ registerInverterRawCMD () {
 
 # Register composite topics manually for now
 
-registerTopic   "BatteryPercent"                             "%"       "battery"                          "battery"      "measurement"
+registerSimpleTopic   "BatteryPercent"                             "%"       "battery"                          ""             ""
 
-registerTopic   "AccumulatedChargerPower"                    "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedDischargerPower"                 "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedBuyPower"                        "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedSellPower"                       "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedLoadPower"                       "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedSelfusePower"                    "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedPvsellPower"                     "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedGridChargerPower"                "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedPvPower"                         "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedChargerPower"                    "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedDischargerPower"                 "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedBuyPower"                        "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedSellPower"                       "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedLoadPower"                       "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedSelfusePower"                    "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedPvsellPower"                     "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedGridChargerPower"                "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedPvPower"                         "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
 
 # Register topic for push commands
 registerInverterRawCMD

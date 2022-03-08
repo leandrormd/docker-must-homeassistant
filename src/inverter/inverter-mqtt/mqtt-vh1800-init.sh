@@ -38,6 +38,7 @@ registerSimpleTopic () {
             \"name\": \""$MQTT_DEVICENAME"_$1\",
             \"unique_id\": \""$MQTT_DEVICENAME"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
+            \"unit_of_measurement\": \"$2\",
             \"icon\": \"mdi:$3\"
         }"
 }
@@ -81,9 +82,9 @@ registerTopic         "GridFrequency"                            "Hz"           
 registerSimpleTopic   "InverterMaxNumber"                        ""                 "format-list-numbered"         ""                   ""                  
 registerSimpleTopic   "CombineType"                              ""                 "format-list-bulleted-type"    ""                   ""                  
 registerSimpleTopic   "InverterNumber"                           ""                 "format-list-numbered"         ""                   ""                  
-registerTopic         "AcRadiatorTemp"                           "ºC"               "thermometer"                  "temperature"        "measurement"       
-registerTopic         "TransformerTemp"                          "ºC"               "thermometer"                  "temperature"        "measurement"       
-registerTopic         "DcRadiatorTemp"                           "ºC"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "AcRadiatorTemp"                           "°C"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "TransformerTemp"                          "°C"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "DcRadiatorTemp"                           "°C"               "thermometer"                  "temperature"        "measurement"       
 registerSimpleTopic   "InverterRelayStateNo"                     ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "GridRelayStateNo"                         ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "LoadRelayStateNo"                         ""                 "electric-switch"              ""                   ""                  
@@ -108,8 +109,8 @@ registerTopic         "PvVoltage"                                "V"            
 registerTopic         "ChrBatteryVoltage"                        "V"                "current-dc"                   "voltage"            "measurement"       
 registerTopic         "ChargerCurrent"                           "A"                "current-dc"                   "current"            "measurement"       
 registerTopic         "ChargerPower"                             "W"                "car-turbopower"               "power"              "measurement"       
-registerTopic         "RadiatorTemp"                             "ºC"               "thermometer"                  "temperature"        "measurement"       
-registerTopic         "ExternalTemp"                             "ºC"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "RadiatorTemp"                             "°C"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "ExternalTemp"                             "°C"               "thermometer"                  "temperature"        "measurement"       
 registerSimpleTopic   "BatteryRelayNo"                           ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "PvRelayNo"                                ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "ChrError1"                                ""                 "alert-circle-outline"         ""                   ""                  
@@ -122,17 +123,17 @@ registerSimpleTopic   "AccumulatedMinute"                        "min"          
 
 # Register composite topics manually for now
 
-registerTopic   "BatteryPercent"                             "%"       "battery"                          "battery"      "measurement"
+registerSimpleTopic   "BatteryPercent"                             "%"       "battery"                          ""             ""
 
-registerTopic   "AccumulatedChargerPower"                    "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedDischargerPower"                 "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedBuyPower"                        "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedSellPower"                       "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedLoadPower"                       "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedSelfusePower"                    "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedPvsellPower"                     "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedGridChargerPower"                "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
-registerTopic   "AccumulatedPvPower"                         "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedChargerPower"                    "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedDischargerPower"                 "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedBuyPower"                        "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedSellPower"                       "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedLoadPower"                       "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedSelfusePower"                    "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedPvsellPower"                     "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedGridChargerPower"                "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
+registerTopic         "AccumulatedPvPower"                         "kWh"     "chart-bell-curve-cumulative"      "energy"       "total_increasing"
 
 # Register topic for push commands
 registerInverterRawCMD
