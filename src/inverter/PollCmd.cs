@@ -37,7 +37,8 @@ namespace inverter
             try
             {
 
-                var portName = "/dev/ttyUSB0";
+                //var portName = "/dev/ttyUSB0";
+                var portName = "com7";
 
                 //_console.WriteLine($"Creating port {portName}");
 

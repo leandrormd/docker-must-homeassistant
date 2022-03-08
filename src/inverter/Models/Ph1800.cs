@@ -89,7 +89,7 @@ namespace inverter.Models
             return 0;
         }
 
-        [SensorInterpretation("chart-bell-curve-cumulative","KWH")]
+        [SensorInterpretation("chart-bell-curve-cumulative","kWh")]
         public double? AccumulatedChargerPower
         {   get
             {
@@ -97,7 +97,7 @@ namespace inverter.Models
             }
         }
 
-        [SensorInterpretation("chart-bell-curve-cumulative","KWH")]
+        [SensorInterpretation("chart-bell-curve-cumulative","kWh")]
         public double? AccumulatedDischargerPower
         {   get
             {
@@ -105,7 +105,7 @@ namespace inverter.Models
             }
         }
 
-        [SensorInterpretation("chart-bell-curve-cumulative","KWH")]
+        [SensorInterpretation("chart-bell-curve-cumulative","kWh")]
         public double? AccumulatedBuyPower
         {   get
             {
@@ -113,7 +113,7 @@ namespace inverter.Models
             }
         }
 
-        [SensorInterpretation("chart-bell-curve-cumulative","KWH")]
+        [SensorInterpretation("chart-bell-curve-cumulative","kWh")]
         public double? AccumulatedSellPower
         {   get
             {
@@ -121,7 +121,7 @@ namespace inverter.Models
             }
         }
 
-        [SensorInterpretation("chart-bell-curve-cumulative","KWH")]
+        [SensorInterpretation("chart-bell-curve-cumulative","kWh")]
         public double? AccumulatedLoadPower
         {   get
             {
@@ -129,7 +129,7 @@ namespace inverter.Models
             }
         }
 
-        [SensorInterpretation("chart-bell-curve-cumulative","KWH")]
+        [SensorInterpretation("chart-bell-curve-cumulative","kWh")]
         public double? AccumulatedSelfusePower
         {   get
             {
@@ -137,7 +137,7 @@ namespace inverter.Models
             }
         }
 
-        [SensorInterpretation("chart-bell-curve-cumulative","KWH")]
+        [SensorInterpretation("chart-bell-curve-cumulative","kWh")]
         public double? AccumulatedPvsellPower
         {   get
             {
@@ -145,7 +145,7 @@ namespace inverter.Models
             }
         }
 
-        [SensorInterpretation("chart-bell-curve-cumulative","KWH")]
+        [SensorInterpretation("chart-bell-curve-cumulative","kWh")]
         public double? AccumulatedGridChargerPower
         {   get
             {
@@ -153,7 +153,7 @@ namespace inverter.Models
             }
         }
 
-        [SensorInterpretation("chart-bell-curve-cumulative","KWH")]
+        [SensorInterpretation("chart-bell-curve-cumulative","kWh")]
         public double? AccumulatedPvPower
         {   get
             {

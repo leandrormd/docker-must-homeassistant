@@ -64,15 +64,15 @@ registerInverterRawCMD () {
 
 registerTopic "BatteryPercent"                             "%"       "battery"
 
-registerTopic "AccumulatedChargerPower"                    "KWH"     "chart-bell-curve-cumulative"
-registerTopic "AccumulatedDischargerPower"                 "KWH"     "chart-bell-curve-cumulative"
-registerTopic "AccumulatedBuyPower"                        "KWH"     "chart-bell-curve-cumulative"
-registerTopic "AccumulatedSellPower"                       "KWH"     "chart-bell-curve-cumulative"
-registerTopic "AccumulatedLoadPower"                       "KWH"     "chart-bell-curve-cumulative"
-registerTopic "AccumulatedSelfusePower"                    "KWH"     "chart-bell-curve-cumulative"
-registerTopic "AccumulatedPvsellPower"                     "KWH"     "chart-bell-curve-cumulative"
-registerTopic "AccumulatedGridChargerPower"                "KWH"     "chart-bell-curve-cumulative"
-registerTopic "AccumulatedPvPower"                         "KWH"     "chart-bell-curve-cumulative"
+registerTopic "AccumulatedChargerPower"                    "kWh"     "chart-bell-curve-cumulative"
+registerTopic "AccumulatedDischargerPower"                 "kWh"     "chart-bell-curve-cumulative"
+registerTopic "AccumulatedBuyPower"                        "kWh"     "chart-bell-curve-cumulative"
+registerTopic "AccumulatedSellPower"                       "kWh"     "chart-bell-curve-cumulative"
+registerTopic "AccumulatedLoadPower"                       "kWh"     "chart-bell-curve-cumulative"
+registerTopic "AccumulatedSelfusePower"                    "kWh"     "chart-bell-curve-cumulative"
+registerTopic "AccumulatedPvsellPower"                     "kWh"     "chart-bell-curve-cumulative"
+registerTopic "AccumulatedGridChargerPower"                "kWh"     "chart-bell-curve-cumulative"
+registerTopic "AccumulatedPvPower"                         "kWh"     "chart-bell-curve-cumulative"
 
 # Register topic for push commands
 registerInverterRawCMD

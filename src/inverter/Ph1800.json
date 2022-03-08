@@ -360,7 +360,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "Vac",
+    "Uom": "V",
     "Icon": "current-ac",
     "Lookup": [],
     "Publish": true
@@ -382,7 +382,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Vdc-batt",
+    "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
     "Publish": true
@@ -393,7 +393,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Vac",
+    "Uom": "V",
     "Icon": "current-ac",
     "Lookup": [],
     "Publish": true
@@ -404,7 +404,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Vac",
+    "Uom": "V",
     "Icon": "current-ac",
     "Lookup": [],
     "Publish": true
@@ -415,7 +415,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Vdc/Vac",
+    "Uom": "V",
     "Icon": "cog-transfer-outline",
     "Lookup": [],
     "Publish": true
@@ -426,7 +426,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Aac",
+    "Uom": "A",
     "Icon": "current-ac",
     "Lookup": [],
     "Publish": true
@@ -437,7 +437,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Aac",
+    "Uom": "A",
     "Icon": "current-ac",
     "Lookup": [],
     "Publish": true
@@ -448,7 +448,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Aac",
+    "Uom": "A",
     "Icon": "current-ac",
     "Lookup": [],
     "Publish": true
@@ -459,7 +459,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Aac",
+    "Uom": "A",
     "Icon": "current-ac",
     "Lookup": [],
     "Publish": true
@@ -547,7 +547,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "Var",
+    "Uom": "VA",
     "Icon": "cog-transfer-outline",
     "Lookup": [],
     "Publish": true
@@ -558,7 +558,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "Var",
+    "Uom": "VA",
     "Icon": "transmission-tower",
     "Lookup": [],
     "Publish": true
@@ -569,7 +569,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "Var",
+    "Uom": "VA",
     "Icon": "lightbulb-on-outline",
     "Lookup": [],
     "Publish": true
@@ -632,7 +632,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "oC",
+    "Uom": "°C",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
@@ -643,7 +643,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "oC",
+    "Uom": "°C",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
@@ -654,7 +654,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "oC",
+    "Uom": "°C",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
@@ -1013,7 +1013,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "Adc",
+    "Uom": "A",
     "Icon": "current-dc",
     "Lookup": [],
     "Publish": true
@@ -1024,7 +1024,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "Vdc-batt",
+    "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
     "Publish": true
@@ -1246,7 +1246,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Vdc-pv",
+    "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
     "Publish": true
@@ -1257,7 +1257,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Vdc-batt",
+    "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
     "Publish": true
@@ -1268,7 +1268,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Adc",
+    "Uom": "A",
     "Icon": "current-dc",
     "Lookup": [],
     "Publish": true
@@ -1290,7 +1290,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "oC",
+    "Uom": "°C",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
@@ -1301,7 +1301,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "oC",
+    "Uom": "°C",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
@@ -1386,7 +1386,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "Vdc-batt",
+    "Uom": "V",
     "Icon": "current-dc",
     "Lookup": [],
     "Publish": true
@@ -1397,7 +1397,7 @@
     "Coefficient": 0.1,
     "IsSigned": true,
     "DataType": "System.Double",
-    "Uom": "Adc",
+    "Uom": "A",
     "Icon": "current-dc",
     "Lookup": [],
     "Publish": true

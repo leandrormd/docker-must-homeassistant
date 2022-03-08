@@ -369,7 +369,7 @@ PV energy and grid can charge batteries.
         public System.Int16? WorkStateNo { get; set; }
 
         [ModbusSensor(25202, 1.00d, true)]
-        [SensorInterpretation("current-ac","Vac")]
+        [SensorInterpretation("current-ac","V")]
         public System.Int16? AcVoltageGrade { get; set; }
 
         [ModbusSensor(25203, 1.00d, true)]
@@ -377,35 +377,35 @@ PV energy and grid can charge batteries.
         public System.Int16? RatedPower { get; set; }
 
         [ModbusSensor(25205, 0.10d, true)]
-        [SensorInterpretation("current-dc","Vdc-batt")]
+        [SensorInterpretation("current-dc","V")]
         public System.Double? BatteryVoltage { get; set; }
 
         [ModbusSensor(25206, 0.10d, true)]
-        [SensorInterpretation("current-ac","Vac")]
+        [SensorInterpretation("current-ac","V")]
         public System.Double? InverterVoltage { get; set; }
 
         [ModbusSensor(25207, 0.10d, true)]
-        [SensorInterpretation("current-ac","Vac")]
+        [SensorInterpretation("current-ac","V")]
         public System.Double? GridVoltage { get; set; }
 
         [ModbusSensor(25208, 0.10d, true)]
-        [SensorInterpretation("cog-transfer-outline","Vdc/Vac")]
+        [SensorInterpretation("cog-transfer-outline","V")]
         public System.Double? BusVoltage { get; set; }
 
         [ModbusSensor(25209, 0.10d, true)]
-        [SensorInterpretation("current-ac","Aac")]
+        [SensorInterpretation("current-ac","A")]
         public System.Double? ControlCurrent { get; set; }
 
         [ModbusSensor(25210, 0.10d, true)]
-        [SensorInterpretation("current-ac","Aac")]
+        [SensorInterpretation("current-ac","A")]
         public System.Double? InverterCurrent { get; set; }
 
         [ModbusSensor(25211, 0.10d, true)]
-        [SensorInterpretation("current-ac","Aac")]
+        [SensorInterpretation("current-ac","A")]
         public System.Double? GridCurrent { get; set; }
 
         [ModbusSensor(25212, 0.10d, true)]
-        [SensorInterpretation("current-ac","Aac")]
+        [SensorInterpretation("current-ac","A")]
         public System.Double? LoadCurrent { get; set; }
 
         [ModbusSensor(25213, 1.00d, true)]
@@ -437,15 +437,15 @@ PV energy and grid can charge batteries.
         public System.Int16? SLoad { get; set; }
 
         [ModbusSensor(25221, 1.00d, true)]
-        [SensorInterpretation("cog-transfer-outline","Var")]
+        [SensorInterpretation("cog-transfer-outline","VA")]
         public System.Int16? QInverter { get; set; }
 
         [ModbusSensor(25222, 1.00d, true)]
-        [SensorInterpretation("transmission-tower","Var")]
+        [SensorInterpretation("transmission-tower","VA")]
         public System.Int16? QGrid { get; set; }
 
         [ModbusSensor(25223, 1.00d, true)]
-        [SensorInterpretation("lightbulb-on-outline","Var")]
+        [SensorInterpretation("lightbulb-on-outline","VA")]
         public System.Int16? QLoad { get; set; }
 
         [ModbusSensor(25225, 0.01d, true)]
@@ -469,15 +469,15 @@ PV energy and grid can charge batteries.
         public System.Int16? InverterNumber { get; set; }
 
         [ModbusSensor(25233, 1.00d, true)]
-        [SensorInterpretation("thermometer","oC")]
+        [SensorInterpretation("thermometer","°C")]
         public System.Int16? AcRadiatorTemp { get; set; }
 
         [ModbusSensor(25234, 1.00d, true)]
-        [SensorInterpretation("thermometer","oC")]
+        [SensorInterpretation("thermometer","°C")]
         public System.Int16? TransformerTemp { get; set; }
 
         [ModbusSensor(25235, 1.00d, true)]
-        [SensorInterpretation("thermometer","oC")]
+        [SensorInterpretation("thermometer","°C")]
         public System.Int16? DcRadiatorTemp { get; set; }
 
         [ModbusSensor(25237, 1.00d, true)]
@@ -653,11 +653,11 @@ PV energy and grid can charge batteries.
         public System.Int16? BattPower { get; set; }
 
         [ModbusSensor(25274, 1.00d, true)]
-        [SensorInterpretation("current-dc","Adc")]
+        [SensorInterpretation("current-dc","A")]
         public System.Int16? BattCurrent { get; set; }
 
         [ModbusSensor(25275, 1.00d, true)]
-        [SensorInterpretation("current-dc","Vdc-batt")]
+        [SensorInterpretation("current-dc","V")]
         public System.Int16? BattVoltageGrade { get; set; }
 
         [ModbusSensor(25277, 1.00d, true)]
@@ -794,15 +794,15 @@ f 'User-Defined' LI is selected, battery charge voltage and low DC cut-off volta
         public System.Int16? ChargingStateNo { get; set; }
 
         [ModbusSensor(15205, 0.10d, true)]
-        [SensorInterpretation("current-dc","Vdc-pv")]
+        [SensorInterpretation("current-dc","V")]
         public System.Double? PvVoltage { get; set; }
 
         [ModbusSensor(15206, 0.10d, true)]
-        [SensorInterpretation("current-dc","Vdc-batt")]
+        [SensorInterpretation("current-dc","V")]
         public System.Double? ChrBatteryVoltage { get; set; }
 
         [ModbusSensor(15207, 0.10d, true)]
-        [SensorInterpretation("current-dc","Adc")]
+        [SensorInterpretation("current-dc","A")]
         public System.Double? ChargerCurrent { get; set; }
 
         [ModbusSensor(15208, 1.00d, true)]
@@ -810,11 +810,11 @@ f 'User-Defined' LI is selected, battery charge voltage and low DC cut-off volta
         public System.Int16? ChargerPower { get; set; }
 
         [ModbusSensor(15209, 1.00d, true)]
-        [SensorInterpretation("thermometer","oC")]
+        [SensorInterpretation("thermometer","°C")]
         public System.Int16? RadiatorTemp { get; set; }
 
         [ModbusSensor(15210, 1.00d, true)]
-        [SensorInterpretation("thermometer","oC")]
+        [SensorInterpretation("thermometer","°C")]
         public System.Int16? ExternalTemp { get; set; }
 
         [ModbusSensor(15211, 1.00d, true)]
@@ -874,11 +874,11 @@ f 'User-Defined' LI is selected, battery charge voltage and low DC cut-off volta
         public System.Int16? ChrWarning1 { get; set; }
 
         [ModbusSensor(15215, 1.00d, true)]
-        [SensorInterpretation("current-dc","Vdc-batt")]
+        [SensorInterpretation("current-dc","V")]
         public System.Int16? BattVolGrade { get; set; }
 
         [ModbusSensor(15216, 0.10d, true)]
-        [SensorInterpretation("current-dc","Adc")]
+        [SensorInterpretation("current-dc","A")]
         public System.Double? RatedCurrent { get; set; }
 
         [ModbusSensor(15217, 1.00d, true)]

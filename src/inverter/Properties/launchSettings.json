@@ -1,7 +1,8 @@
 {
   "profiles": {
     "inverter": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "poll -a=true"
     },
     "Docker": {
       "commandName": "Docker"
