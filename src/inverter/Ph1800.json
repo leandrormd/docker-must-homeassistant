@@ -632,7 +632,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "°C",
+    "Uom": "ÂºC",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
@@ -643,7 +643,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "°C",
+    "Uom": "ÂºC",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
@@ -654,7 +654,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "°C",
+    "Uom": "ÂºC",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
@@ -1290,7 +1290,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "°C",
+    "Uom": "ÂºC",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
@@ -1301,7 +1301,7 @@
     "Coefficient": 1,
     "IsSigned": true,
     "DataType": "System.Int16",
-    "Uom": "°C",
+    "Uom": "ÂºC",
     "Icon": "thermometer",
     "Lookup": [],
     "Publish": true
