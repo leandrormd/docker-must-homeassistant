@@ -19,7 +19,7 @@ registerTopic () {
         -t "$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1/config" \
         -m "{
             \"name\": \""$MQTT_DEVICENAME"_$1\",
-            \"identifiers\": {[\"serialnumber\", \""$MQTT_SERIALNUMBER"\" ]},
+            \"identifiers\": [\"serialnumber\", \""$MQTT_SERIALNUMBER"\" ],
             \"unit_of_measurement\": \"$2\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
             \"icon\": \"mdi:$3\",
@@ -37,7 +37,7 @@ registerSimpleTopic () {
         -t "$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1/config" \
         -m "{
             \"name\": \""$MQTT_DEVICENAME"_$1\",
-            \"identifiers\": {[\"serialnumber\", \""$MQTT_SERIALNUMBER"\" ]},
+            \"identifiers\": [\"serialnumber\", \""$MQTT_SERIALNUMBER"\" ],
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
             \"unit_of_measurement\": \"$2\",
             \"icon\": \"mdi:$3\"
