@@ -3,6 +3,7 @@ version: '3.4'
 services:
     inverter:
         image: ${DOCKER_REGISTRY-}inverter
+        restart: always
         build:
             context: .
             dockerfile: src/inverter/Dockerfile
