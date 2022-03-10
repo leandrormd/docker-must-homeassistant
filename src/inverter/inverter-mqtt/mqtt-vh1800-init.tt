@@ -64,6 +64,7 @@ registerInverterRawCMD () {
         -m "{
             \"name\": \""$MQTT_DEVICENAME"\",
             \"unique_id\": \""$MQTT_SERIALNUMBER"\",
+            \"identifiers\": [\"serialnumber\", \""$MQTT_SERIALNUMBER"\" ],
             \"state_topic\": \"$MQTT_TOPIC/sensor/$MQTT_DEVICENAME\"
         }"
 }
