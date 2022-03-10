@@ -18,7 +18,7 @@ registerTopic () {
         -P "$MQTT_PASSWORD" \
         -t "$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1/config" \
         -m "{
-            \"name\": \""$MQTT_DEVICENAME"_$1\",
+            \"name\": \"_$1\",
             \"unique_id\": \""$MQTT_SERIALNUMBER"_$1\",
             \"unit_of_measurement\": \"$2\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
@@ -43,7 +43,7 @@ registerSimpleTopic () {
         -P "$MQTT_PASSWORD" \
         -t "$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1/config" \
         -m "{
-            \"name\": \""$MQTT_DEVICENAME"_$1\",
+            \"name\": \"_$1\",
             \"unique_id\": \""$MQTT_SERIALNUMBER"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
             \"unit_of_measurement\": \"$2\",

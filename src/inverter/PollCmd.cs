@@ -37,8 +37,8 @@ namespace inverter
             try
             {
 
-                var portName = "/dev/ttyUSB0";
-                //var portName = "com7";
+                //var portName = "/dev/ttyUSB0";
+                var portName = "com7";
 
                 //_console.WriteLine($"Creating port {portName}");
 
@@ -62,9 +62,11 @@ namespace inverter
                     //_console.WriteLine($"Opening port {port}");
                     port.Open();
 
-                    var wrapper = new SerialPortWrapper(port, d => { 
-                    }, 
-                    d => { 
+                    var wrapper = new SerialPortWrapper(port, d =>
+                    {
+                    },
+                    d =>
+                    {
                     });
                     var reader = new ModbusReader(wrapper);
 
@@ -76,16 +78,17 @@ namespace inverter
 
 
                     // Ph1800
-                    if (this.All) {
+                    if (this.All)
+                    {
                         values = ReadValues(reader, port, 4, 10001, 8);
                         SensorToModelMapper.Map(10001, values, modelPh);
-                    
+
                         values = ReadValues(reader, port, 4, 10103, 10);
                         SensorToModelMapper.Map(10103, values, modelPh);
 
                         values = ReadValues(reader, port, 4, 15201, 21);
                         SensorToModelMapper.Map(15201, values, modelPh);
-                    
+
                         values = ReadValues(reader, port, 4, 20000, 17);
                         SensorToModelMapper.Map(20000, values, modelPh);
 
@@ -105,16 +108,20 @@ namespace inverter
                         values = ReadValues(reader, port, 4, 25201, 79);
                         SensorToModelMapper.Map(25201, values, modelPh);
                     }
-                    
+
                     port.Close();
 
-
-                    var json = JsonSerializer.Serialize<Models.Ph1800>(modelPh, new JsonSerializerOptions() { 
+                    var options = new JsonSerializerOptions()
+                    {
                         IgnoreNullValues = true,
                         WriteIndented = true,
                         //Rather leave as PascalCase
                         //PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-                    });
+                    };
+
+                    options.Converters.Add(new DoubleFormatConverter());
+
+                    var json = JsonSerializer.Serialize<Models.Ph1800>(modelPh, options);
 
                     _console.WriteLine(json);
 
@@ -143,13 +150,15 @@ namespace inverter
             port.DiscardOutBuffer();
 
             //Set read timeout based on baud rate and count of items
-            double timeout = 1.0f / (double) port.BaudRate * 1000.0 * 12.0 * (double) count * 2.0 + (double) (count * 2) + 5.0 + 1000.0;
+            double timeout = 1.0f / (double)port.BaudRate * 1000.0 * 12.0 * (double)count * 2.0 + (double)(count * 2) + 5.0 + 1000.0;
 
             port.ReadTimeout = (int)timeout;
 
             ushort[] values = new ushort[] { };
 
             values = reader.Read(deviceId, address, count);
+
+            System.Threading.Thread.Sleep(100);
 
             return values;
         }
