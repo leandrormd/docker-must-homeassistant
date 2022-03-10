@@ -24,7 +24,14 @@ registerTopic () {
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
             \"icon\": \"mdi:$3\",
             \"device_class\": \"$4\",
-            \"state_class\": \"$5\"
+            \"state_class\": \"$5\",
+            \"device\":{
+                \"model\":\"PV18-1012 VPM\",
+                \"identifiers\": \""$MQTT_DEVICENAME"\",
+                \"via_device\": \""$MQTT_DEVICENAME"\",
+                \"name\": \""$MQTT_DEVICENAME"\",
+                \"manufacturer\": \"Must Solar\"
+            }
         }"
 }
 
@@ -40,7 +47,14 @@ registerSimpleTopic () {
             \"unique_id\": \""$MQTT_SERIALNUMBER"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
             \"unit_of_measurement\": \"$2\",
-            \"icon\": \"mdi:$3\"
+            \"icon\": \"mdi:$3\",
+            \"device\":{
+                \"model\":\"PV18-1012 VPM\",
+                \"identifiers\": \""$MQTT_DEVICENAME"\",
+                \"via_device\": \""$MQTT_DEVICENAME"\",
+                \"name\": \""$MQTT_DEVICENAME"\",
+                \"manufacturer\": \"Must Solar\"
+            }
         }"
 }
 
@@ -59,7 +73,7 @@ registerInverterRawCMD () {
 }
 
 # Register topic for push commands
-registerInverterRawCMD
+# registerInverterRawCMD
 
 registerSimpleTopic   "WorkStateNo"                              ""                 "state-machine"                ""                   ""                  
 registerTopic         "AcVoltageGrade"                           "V"                "current-ac"                   "voltage"            "measurement"       
