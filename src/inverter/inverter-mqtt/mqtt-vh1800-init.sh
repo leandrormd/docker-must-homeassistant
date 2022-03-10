@@ -1,4 +1,4 @@
-ï»¿#!/bin/bash
+#!/bin/bash
 #
 # Simple script to register the MQTT topics when the container starts for the first time...
 
@@ -19,7 +19,7 @@ registerTopic () {
         -t "$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1/config" \
         -m "{
             \"name\": \""$MQTT_DEVICENAME"_$1\",
-            \"identifiers\": [\"serialnumber\", \""$MQTT_SERIALNUMBER"\" ],
+            \"unique_id\": \""$MQTT_SERIALNUMBER"_$1\",
             \"unit_of_measurement\": \"$2\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
             \"icon\": \"mdi:$3\",
@@ -37,7 +37,7 @@ registerSimpleTopic () {
         -t "$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1/config" \
         -m "{
             \"name\": \""$MQTT_DEVICENAME"_$1\",
-            \"identifiers\": [\"serialnumber\", \""$MQTT_SERIALNUMBER"\" ],
+            \"unique_id\": \""$MQTT_SERIALNUMBER"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
             \"unit_of_measurement\": \"$2\",
             \"icon\": \"mdi:$3\"
@@ -53,8 +53,7 @@ registerInverterRawCMD () {
         -t "$MQTT_TOPIC/sensor/$MQTT_DEVICENAME/config" \
         -m "{
             \"name\": \""$MQTT_DEVICENAME"\",
-            \"unique_id\": \""$MQTT_SERIALNUMBER"\",
-            \"identifiers\": [\"serialnumber\", \""$MQTT_SERIALNUMBER"\" ],
+            \"unique_id\": \""$MQTT_SERIALNUMBER"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/$MQTT_DEVICENAME\"
         }"
 }
@@ -88,9 +87,9 @@ registerTopic         "GridFrequency"                            "Hz"           
 registerSimpleTopic   "InverterMaxNumber"                        ""                 "format-list-numbered"         ""                   ""                  
 registerSimpleTopic   "CombineType"                              ""                 "format-list-bulleted-type"    ""                   ""                  
 registerSimpleTopic   "InverterNumber"                           ""                 "format-list-numbered"         ""                   ""                  
-registerTopic         "AcRadiatorTemp"                           "Â°C"               "thermometer"                  "temperature"        "measurement"       
-registerTopic         "TransformerTemp"                          "Â°C"               "thermometer"                  "temperature"        "measurement"       
-registerTopic         "DcRadiatorTemp"                           "Â°C"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "AcRadiatorTemp"                           "°C"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "TransformerTemp"                          "°C"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "DcRadiatorTemp"                           "°C"               "thermometer"                  "temperature"        "measurement"       
 registerSimpleTopic   "InverterRelayStateNo"                     ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "GridRelayStateNo"                         ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "LoadRelayStateNo"                         ""                 "electric-switch"              ""                   ""                  
@@ -115,8 +114,8 @@ registerTopic         "PvVoltage"                                "V"            
 registerTopic         "ChrBatteryVoltage"                        "V"                "current-dc"                   "voltage"            "measurement"       
 registerTopic         "ChargerCurrent"                           "A"                "current-dc"                   "current"            "measurement"       
 registerTopic         "ChargerPower"                             "W"                "car-turbopower"               "power"              "measurement"       
-registerTopic         "RadiatorTemp"                             "Â°C"               "thermometer"                  "temperature"        "measurement"       
-registerTopic         "ExternalTemp"                             "Â°C"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "RadiatorTemp"                             "°C"               "thermometer"                  "temperature"        "measurement"       
+registerTopic         "ExternalTemp"                             "°C"               "thermometer"                  "temperature"        "measurement"       
 registerSimpleTopic   "BatteryRelayNo"                           ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "PvRelayNo"                                ""                 "electric-switch"              ""                   ""                  
 registerSimpleTopic   "ChrError1"                                ""                 "alert-circle-outline"         ""                   ""                  
