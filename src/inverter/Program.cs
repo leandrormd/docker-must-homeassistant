@@ -17,10 +17,10 @@ namespace inverter
         {
 
             var Configuration = new ConfigurationBuilder()
-        .SetBasePath(Directory.GetCurrentDirectory())
-        .AddJsonFile(AppDomain.CurrentDomain.BaseDirectory + "\\appsettings.json", optional: true, reloadOnChange: true)
-        .AddEnvironmentVariables()
-        .Build();
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile(AppDomain.CurrentDomain.BaseDirectory + "\\appsettings.json", optional: true, reloadOnChange: true)
+                .AddEnvironmentVariables()
+                .Build();
 
             Log.Logger = new LoggerConfiguration()
                    .ReadFrom.Configuration(Configuration)
@@ -48,7 +48,7 @@ namespace inverter
             {
                 return await builder.RunCommandLineApplicationAsync<InverterCmd>(args);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 return 1;
