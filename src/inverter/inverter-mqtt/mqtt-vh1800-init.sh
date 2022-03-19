@@ -6,7 +6,6 @@ MQTT_SERVER=`cat /app/mqtt.json | jq '.server' -r`
 MQTT_PORT=`cat /app/mqtt.json | jq '.port' -r`
 MQTT_TOPIC=`cat /app/mqtt.json | jq '.topic' -r`
 MQTT_DEVICENAME=`cat /app/mqtt.json | jq '.devicename' -r`
-MQTT_SERIALNUMBER=`cat /app/mqtt.json | jq '.serialnumber' -r`
 MQTT_USERNAME=`cat /app/mqtt.json | jq '.username' -r`
 MQTT_PASSWORD=`cat /app/mqtt.json | jq '.password' -r`
 
@@ -19,7 +18,7 @@ registerTopic () {
         -t "$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1/config" \
         -m "{
             \"name\": \"$1\",
-            \"unique_id\": \""$MQTT_SERIALNUMBER"_$1\",
+            \"unique_id\": \""$MQTT_DEVICENAME"_$1\",
             \"unit_of_measurement\": \"$2\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
             \"icon\": \"mdi:$3\",
@@ -44,7 +43,7 @@ registerSimpleTopic () {
         -t "$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1/config" \
         -m "{
             \"name\": \"$1\",
-            \"unique_id\": \""$MQTT_SERIALNUMBER"_$1\",
+            \"unique_id\": \""$MQTT_DEVICENAME"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/"$MQTT_DEVICENAME"_$1\",
             \"unit_of_measurement\": \"$2\",
             \"icon\": \"mdi:$3\",
@@ -67,7 +66,7 @@ registerInverterRawCMD () {
         -t "$MQTT_TOPIC/sensor/$MQTT_DEVICENAME/config" \
         -m "{
             \"name\": \""$MQTT_DEVICENAME"\",
-            \"unique_id\": \""$MQTT_SERIALNUMBER"_$1\",
+            \"unique_id\": \""$MQTT_DEVICENAME"_$1\",
             \"state_topic\": \"$MQTT_TOPIC/sensor/$MQTT_DEVICENAME\"
         }"
 }
